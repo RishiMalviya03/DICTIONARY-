@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(222, 238, 114); */
+    background-image: url("books.jpg");
+    background-size:cover;
 }
 
 #site_name{
@@ -19,7 +21,7 @@ hr:not([size]) {
     height: 10px;
 }
 .navbar{
-  background-color: #00ff48;
+  background-color: #ffffff;
 }
 #bookmark_btn{
 font-size: larger;
@@ -43,8 +45,12 @@ color: black;
 }
 .quote_box{
 text-align: center;
-color: rgb(156, 218, 32);
-background-color: black;
+color: rgb(0, 0, 0);
+background: transparent;
+border: none;
+position: relative;
+
+
 }
 #quote{
     font-weight: bolder;
@@ -59,10 +65,9 @@ font-weight: bold;
 }
 
 #search_word{
-    background-color:black;
+    background-color:transparent;
     color: rgb(251, 253, 249);
-
-    
+  
 }
 #search_word:focus{
  
@@ -71,20 +76,21 @@ font-weight: bold;
 .toast-header{
     font-size: larger;
     background-color: gold;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .toast-body{
     font-size: larger;
     background-color: #c9b068;
     background-color: cornsilk;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
 }
 #show_result{
-    background-color: rgb(177, 241, 68);
+    background-color: rgb(255, 255, 255);
     display: none;
     
 }#recent_search_title{
-  color: rgb(255, 253, 244);
+  color: rgb(0, 0, 0);
   display: none;
 }
 #bookmark_icon{
@@ -99,11 +105,13 @@ text-transform: capitalize;
 font-weight: bolder;
 }
 #audio_btn{
-    background-color: rgb(196, 248, 53);
+    background-color: rgb(0, 255, 238);
     color: black;
     border: 2px solid rgb(145, 255, 0);
     float: right;
-    margin-top: -8%;
+    margin-top: 89px;
+    position: relative;
+    left: 15px;
     
   
 }
@@ -111,13 +119,19 @@ font-weight: bolder;
 .recent_word{
     width: fit-content;
    height: fit-content;
-   background-color: black;
-   color: rgb(252, 252, 252);
-   border: 2px solid rgb(183, 255, 0);
+   background-color:transparent;
+   color: rgb(254, 252, 252);
+   border: 1px solid transparent;
+   display: none;
+}
+.recent_word:hover{
+  background: white;
 }
 #recent_popover{
-  background-color: black;
-  color: rgb(255, 255, 255);
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: x-large;
 }
 .popover{
   background: gold;
@@ -241,7 +255,7 @@ font-weight: bolder;
 #footer .footer-top {
  
   background:  #c9b068;
-  background:  rgb(193, 218, 32);
+  background:  rgb(255, 255, 255);
   padding: 60px 0 30px 0;
 }
 #footer .footer-top .footer-info {
